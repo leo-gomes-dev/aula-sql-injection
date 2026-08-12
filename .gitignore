@@ -1,0 +1,20 @@
+# Dependências do Node.js (Pasta extremamente pesada)
+node_modules/
+
+# Arquivos de configuração local e chaves secretas
+.env
+
+# Arquivos de log do sistema e do NPM
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos temporários do banco de dados (caso mude o SQLite para arquivo físico)
+*.sqlite
+*.sqlite3
+*.db
+
+# Arquivos do sistema operacional (Mac e Windows)
+.DS_Store
+Thumbs.db
