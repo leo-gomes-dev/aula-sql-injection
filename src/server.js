@@ -20,5 +20,9 @@ if (process.env.SQL_MODE === 'vulneravel') {
     app.use('/', rotasSeguras);
 }
 
+app.use((req, res) => {
+    res.status(404).sendFile(path.join(__dirname, '..', 'public', '404.html'));
+});
+
 const PORTA = process.env.PORT || 3000;
 app.listen(PORTA, () => console.log(`Servidor rodando em http://localhost:${PORTA}`));
